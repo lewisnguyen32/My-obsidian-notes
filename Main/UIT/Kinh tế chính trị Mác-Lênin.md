@@ -1,0 +1,129 @@
+### Câu 1: StudyAI Pro có phải là hàng hóa không? Vì sao?
+
+**Trả lời:** **StudyAI Pro là hàng hóa.** Cụ thể, đây là một loại **hàng hóa dịch vụ / hàng hóa phi vật thể (hàng hóa số)**.
+
+**Giải thích căn cứ theo lý luận của C.Mác:** Theo Kinh tế chính trị Mác – Lênin, _hàng hóa là sản phẩm của lao động, có thể thỏa mãn một nhu cầu nào đó của con người thông qua trao đổi, mua bán._ Một sản phẩm muốn trở thành hàng hóa phải hội đủ **3 điều kiện**:
+
+1. **Là sản phẩm của lao động:** StudyAI Pro được tạo ra từ sự hao phí sức lao động (trí óc, thời gian, kỹ năng lập trình, huấn luyện mô hình AI, thiết kế hệ thống) của nhóm sinh viên CNTT.
+2. **Thỏa mãn nhu cầu nào đó của con người:** Ứng dụng đáp ứng nhu cầu học tập thực tế của người dùng: quản lý lịch học, nhắc deadline, tóm tắt tài liệu tự động.
+3. **Được đưa vào tiêu dùng thông qua trao đổi, mua bán:** Phiên bản Pro được phân phối với mức giá **120.000 đồng/tài khoản/năm**.
+
+> **Lưu ý mở rộng của giảng viên:** Bản _StudyAI miễn phí_ không phải là hàng hóa xét theo nghĩa kinh tế chính trị thuần túy vì nó không đi qua quan hệ trao đổi/mua bán trên thị trường (dù nó vẫn là sản phẩm của lao động và có giá trị sử dụng). Việc phân biệt này rất dễ xuất hiện trong các câu hỏi trắc nghiệm gài bẫy!
+
+---
+
+### Câu 2: Hai thuộc tính của hàng hóa StudyAI Pro là gì?
+
+Mọi hàng hóa đều có hai thuộc tính: **Giá trị sử dụng** và **Giá trị**.
+
+#### 1. Giá trị sử dụng (Use value) của StudyAI Pro
+
+- **Khái niệm:** Là công dụng của vật phẩm có thể thỏa mãn một nhu cầu nào đó của con người (nhu cầu vật chất hoặc nhu cầu tinh thần).
+- **Biểu hiện ở StudyAI Pro:**
+    - Giúp sinh viên tiết kiệm thời gian đọc tài liệu, không bỏ lỡ hạn nộp bài, tổ chức thời khóa biểu khoa học.
+    - Giá trị sử dụng này mang tính chất phi vật thể, chỉ được thực hiện khi người dùng cài đặt, đăng nhập và sử dụng dịch vụ trên thiết bị.
+
+#### 2. Giá trị (Value) của StudyAI Pro
+
+- **Khái niệm:** Là _lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa_.
+    
+- **Biểu hiện ở StudyAI Pro:**
+    
+    - Là toàn bộ hao phí lao động trừu tượng (chất xám, trí tuệ, thần kinh, thời gian) của các lập trình viên để xây dựng, vận hành và duy trì hệ thống ứng dụng.
+    - **Hình thức biểu hiện bề ngoài** của giá trị trên thị trường chính là _giá cả_: **120.000 đồng/tài khoản/năm**. Giá cả này là sự biểu hiện bằng tiền của giá trị hàng hóa StudyAI Pro.
+- **Mối quan hệ giữa 2 thuộc tính:** Giữa chúng vừa có sự **thống nhất** (cùng tồn tại trong sản phẩm StudyAI Pro, thiếu 1 trong 2 thì không thành hàng hóa), vừa có sự **mâu thuẫn** (người tạo ra ứng dụng cần Giá trị – tức tiền bán tài khoản, còn người mua chỉ cần Giá trị sử dụng; quá trình thực hiện giá trị diễn ra trên thị trường trước, còn giá trị sử dụng chỉ được thực hiện sau đó trong quá trình tiêu dùng).
+
+---
+
+### Câu 3: Lao động sản xuất StudyAI Pro có tính hai mặt như thế nào? Phân biệt lao động cụ thể và lao động trừu tượng.
+
+**Tính hai mặt:** C.Mác là người đầu tiên phát hiện ra rằng sở dĩ hàng hóa có hai thuộc tính không phải vì có hai thứ lao động khác nhau, mà là do **lao động sản xuất hàng hóa có tính hai mặt**: vừa là _lao động cụ thể_, vừa là _lao động trừu tượng_.
+
+|Tiêu chí|Lao động cụ thể|Lao động trừu tượng|
+|---|---|---|
+|**Khái niệm**|Là lao động có ích dưới một **hình thức cụ thể** của những nghề nghiệp chuyên môn nhất định.|Là sự **hao phí sức lao động nói chung** của con người (tiêu hao cơ bắp, thần kinh, trí óc) không kể hình thức biểu hiện cụ thể của nó.|
+|**Biểu hiện trong StudyAI Pro**|Là những thao tác kỹ thuật đặc thù của kỹ sư phần mềm: gõ code, thiết kế cơ sở dữ liệu, tinh chỉnh prompt AI, debug, deploy server... với công cụ là máy tính, IDE, API.|Là sự căng thẳng thần kinh, tư duy logic, chất xám và năng lượng mà nhóm sinh viên đã tiêu hao trong suốt hàng trăm giờ phát triển ứng dụng.|
+|**Vai trò tạo ra thuộc tính**|Tạo ra **Giá trị sử dụng** của StudyAI Pro.|Tạo ra **Giá trị** của StudyAI Pro.|
+|**Bản chất xã hội**|Phản ánh tính chất **tư nhân** (lao động của từng cá nhân/nhóm riêng biệt). Mang tính vĩnh viễn (xã hội nào cũng cần các nghề cụ thể).|Phản ánh tính chất **xã hội** (lao động đồng nhất của con người). Là phạm trù lịch sử riêng có của nền sản xuất hàng hóa.|
+
+---
+
+### Câu 4: Vì sao lượng giá trị hàng hóa không do thời gian lao động cá biệt quyết định? Trong 3 doanh nghiệp A, B, C, ai có lợi thế nhất?
+
+#### 1. Vì sao không do thời gian lao động cá biệt quyết định?
+
+- **Thời gian lao động cá biệt (TGLĐCB)** là thời gian của từng chủ thể sản xuất để tạo ra một đơn vị hàng hóa. Do điều kiện trang thiết bị, trình độ công nghệ, kỹ năng của mỗi doanh nghiệp khác nhau nên TGLĐCB luôn khác nhau (A mất 150h, B mất 120h, C mất 90h).
+- **Nếu lượng giá trị hàng hóa do TGLĐCB quyết định**, thì người nào càng lười biếng, công nghệ càng lạc hậu, tay nghề càng kém (tốn nhiều thời gian hơn) lại bán được hàng với giá trị cao hơn. Điều này hoàn toàn phi lý và trái với quy luật thị trường.
+- Vì vậy, trên thị trường, hàng hóa được trao đổi theo **giá trị xã hội**, được đo bằng **Thời gian lao động xã hội cần thiết (TGLĐXHCT)** — thời gian cần thiết để sản xuất ra một hàng hóa trong điều kiện sản xuất bình thường của xã hội với trình độ thành thạo trung bình và cường độ lao động trung bình.
+
+#### 2. Doanh nghiệp nào có lợi thế nhất?
+
+- **Dữ liệu đề bài:**
+    - TGLĐXHCT (mặt bằng chung xã hội công nhận): **120 giờ**.
+    - Doanh nghiệp A: TGLĐCB=150 giờ>120 giờTGLĐCB=150 giờ>120 giờ (Bất lợi nhất, hao phí cao hơn xã hội thừa nhận, có nguy cơ thua lỗ nếu không cải tiến kỹ thuật).
+    - Doanh nghiệp B: TGLĐCB=120 giờ=120 giờTGLĐCB=120 giờ=120 giờ (Hòa nhập mặt bằng xã hội, thu được lợi nhuận bình thường).
+    - Doanh nghiệp C: TGLĐCB=90 giờ<120 giờTGLĐCB=90 giờ<120 giờ.
+- **Kết luận:** **Doanh nghiệp C có lợi thế nhất.**
+- **Giải thích:** Doanh nghiệp C chỉ tiêu tốn 90 giờ lao động cá biệt nhưng khi bán sản phẩm ra thị trường, sản phẩm vẫn được xã hội thừa nhận theo giá trị xã hội là 120 giờ. Doanh nghiệp C tiết kiệm được 30 giờ lao động, do đó thu được **lợi nhuận siêu ngạch** (hay giá trị thặng dư siêu ngạch), có ưu thế hạ giá để cạnh tranh và chiếm lĩnh thị trường.
+
+---
+
+### Câu 5: Khi năng suất lao động của ngành tăng 50%, lượng giá trị của một đơn vị sản phẩm thay đổi như thế nào? Vì sao?
+
+#### 1. Quy luật lý luận:
+
+Theo C.Mác: **Lượng giá trị của một đơn vị hàng hóa tỷ lệ nghịch với năng suất lao động.**
+
+- Khi năng suất lao động tăng lên, số lượng sản phẩm làm ra trong một đơn vị thời gian tăng lên, nhưng tổng giá trị do thời gian lao động đó tạo ra không đổi. Do đó, lượng giá trị kết tinh trong **một đơn vị sản phẩm** sẽ giảm xuống.
+
+#### 2. Tính toán cụ thể:
+
+- Ban đầu: Để sản xuất 1 đơn vị sản phẩm cần TGLĐXHCT1=120 giờTGLĐXHCT1​=120 giờ.
+- Năng suất lao động tăng 50%⟹50%⟹ Năng suất mới NSLĐ2=1,5×NSLĐ1NSLĐ2​=1,5×NSLĐ1​.
+- Thời gian lao động xã hội cần thiết để tạo ra 1 sản phẩm lúc này là: TGLĐXHCT2=TGLĐXHCT11,5=120 giờ1,5=80 giờTGLĐXHCT2​=1,5TGLĐXHCT1​​=1,5120 giờ​=80 giờ
+- Tỷ lệ giảm giá trị: 120−80120=40120=13≈33,33%120120−80​=12040​=31​≈33,33%
+
+**Kết luận:** Lượng giá trị của một đơn vị sản phẩm **giảm từ 120 giờ xuống còn 80 giờ** (tức là **giảm đi 1331​ hay xấp xỉ 33,33%33,33%**).
+
+- **Vì sao:** Vì ứng dụng AI và tự động hóa làm tăng hiệu quả của lao động cụ thể, giúp cùng một thời gian xã hội có thể tạo ra nhiều sản phẩm hơn, dẫn đến hao phí lao động xã hội kết tinh trong mỗi đơn vị sản phẩm ít hơn trước.
+
+---
+
+# PHẦN 2: KIẾN THỨC CỐT LÕI & CÁC "BẪY" CẦN BIẾT ĐỂ THI TỐT
+
+Để đạt điểm 9 - 10 môn Kinh tế chính trị Mác – Lênin, đặc biệt là phần **Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể**, bạn cần nắm chắc các điểm mấu chốt sau:
+
+### 1. Phân biệt "Năng suất lao động" và "Cường độ lao động" (Cực kỳ hay thi!)
+
+Đây là bẫy kinh điển trong cả đề thi trắc nghiệm lẫn câu hỏi vấn đáp:
+
+|Đại lượng thay đổi|Số lượng sản phẩm làm ra|Tổng giá trị hàng hóa tạo ra|Giá trị của 1 đơn vị sản phẩm|
+|---|---|---|---|
+|**Năng suất lao động TĂNG**|**Tăng**|**KHÔNG ĐỔI** (vì thời gian làm việc vẫn thế)|**GIẢM** (tỷ lệ nghịch)|
+|**Cường độ lao động TĂNG**|**Tăng**|**TĂNG** (vì hao phí thần kinh, sức lực trong 1 giờ tăng lên)|**KHÔNG ĐỔI**|
+
+- _Mẹo nhớ:_
+    - Tăng năng suất = Làm việc thông minh hơn (nhờ công nghệ, máy móc, AI) →→ Đồ rẻ đi.
+    - Tăng cường độ = Làm việc cật lực, vất vả hơn trong cùng 1 khoảng thời gian →→ Hàng nhiều hơn nhưng mỗi món hao phí vẫn thế.
+
+### 2. Lao động giản đơn và Lao động phức tạp
+
+- **Lao động giản đơn:** Là lao động không đòi hỏi phải trải qua đào tạo, huấn luyện chuyên môn.
+- **Lao động phức tạp:** Là lao động đòi hỏi phải được đào tạo, huấn luyện thành lao động lành nghề.
+- **Quy tắc quy đổi:** Trong cùng một đơn vị thời gian, lao động phức tạp tạo ra **nhiều giá trị hơn** lao động giản đơn. Lao động phức tạp là _lao động giản đơn được nhân bội lên_.
+    - _Áp dụng vào bài StudyAI:_ Lao động lập trình phần mềm AI là **lao động phức tạp**, do đó 1 giờ lao động của kỹ sư CNTT sẽ tạo ra lượng giá trị lớn hơn nhiều so với 1 giờ lao động phổ thông.
+
+### 3. Cấu thành Lượng giá trị hàng hóa
+
+Khi học sang chương Giá trị thặng dư, bạn sẽ gặp công thức tổng quát của lượng giá trị hàng hóa: W=c+v+mW=c+v+m
+
+- **cc (Tư bản bất biến / Lao động quá khứ):** Giá trị tư liệu sản xuất đã tiêu hao (tiền thuê server, khấu hao máy tính, chi phí điện, công cụ bản quyền...). Được lao động cụ thể bảo tồn và chuyển dịch vào sản phẩm mới.
+- **v+mv+m (Lao động sống / Lao động mới tạo ra):** Do lao động trừu tượng tạo ra.
+    - vv: Bù đắp chi phí tái sản xuất sức lao động (tiền lương của lập trình viên).
+    - mm: Giá trị thặng dư (phần dôi ra ngoài tiền lương mà chủ sở hữu/nhóm phát triển thu được).
+
+### 4. Mối liên hệ thời đại: Hàng hóa số và AI dưới góc nhìn Mác-xít
+
+Khi giáo viên hỏi câu hỏi mở/vấn đáp: _"Hàng hóa số như ứng dụng AI có chi phí sao chép gần như bằng 0 (zero marginal cost), vậy tại sao nó vẫn có giá trị?"_
+
+- **Trả lời:** Giá trị hàng hóa số không nằm ở đĩa CD hay chi phí băng thông tải về (chi phí cận biên), mà nằm ở **lao động xã hội kết tinh trong việc nghiên cứu, lập trình, huấn luyện thuật toán, bảo trì hạ tầng máy chủ và bảo mật**. Đó là kết tinh của lao động phức tạp ở trình độ cao.
