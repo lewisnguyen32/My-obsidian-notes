@@ -1,3 +1,34 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+/* 1. Sửa lỗi lem nhem khi thu gọn (Collapse) */
+.toc-content.collapsed,
+.explorer-content[aria-expanded="false"],
+ul.overflow.collapsed {
+  display: none !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* 2. Sửa lỗi mục lục bị cắt khúc dưới (Table of Contents) */
+.toc {
+  max-height: none !important;
+  
+  .toc-content {
+    max-height: calc(100vh - 12rem) !important;
+    overflow-y: auto !important;
+    padding-bottom: 2rem !important;
+    scrollbar-width: thin;
+  }
+}
+
+/* 3. Đảm bảo thanh tiêu đề Explorer và TOC luôn hiển thị ngay ngắn */
+button.toc-header,
+button.title-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
