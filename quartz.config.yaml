@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: vi-VN
+  locale: en-US
   baseUrl: lewisnguyen32.github.io/My-obsidian-notes
   ignorePatterns:
     - private
