@@ -1,3 +1,7 @@
+---
+title: Kinh tế chính trị Mác Lê-nin
+---
+
 ### Câu 1: StudyAI Pro có phải là hàng hóa không? Vì sao?
 
 **Trả lời:** **StudyAI Pro là hàng hóa.** Cụ thể, đây là một loại **hàng hóa dịch vụ / hàng hóa phi vật thể (hàng hóa số)**.
