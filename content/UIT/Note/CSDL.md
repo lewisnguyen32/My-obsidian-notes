@@ -1,0 +1,3 @@
+- [ ] Học chương 2
+- [ ] Coi lại bài tập đã sửa
+- [ ] Làm bài tập chương 2 (Bài nào cũng được)
