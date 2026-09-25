@@ -1,6 +1,18 @@
 ---
 title: Câu hỏi tuần 2
 ---
+### Nhóm 2: Quán cà phê sinh viên trong thời đại số
+
+#### Tình huống
+Nhóm sinh viên A mở một quán cà phê gần trường, bán trực tiếp tại quán và qua ứng dụng giao đồ ăn. Khách hàng có thể thanh toán bằng tiền mặt, chuyển khoản, mã QR hoặc ví điện tử.
+
+Giá bán trên ứng dụng cao hơn do có thêm phí nền tảng và giao hàng. Quán còn cung cấp dịch vụ giao hàng, cho thuê không gian học nhóm và phải cạnh tranh với nhiều quán khác.
+#### Câu hỏi thảo luận
+
+1. Tiền thực hiện những chức năng nào trong tình huống? Các hình thức thanh toán khác nhau có làm thay đổi bản chất của tiền không?
+2. Hoạt động nào là trao đổi hàng hóa, hoạt động nào là cung cấp dịch vụ?
+3. Trong tình huống có những loại thị trường nào? Có thể phân loại chúng theo những tiêu chí nào?
+4. Thị trường tác động như thế nào đến quyết định về sản phẩm, số lượng, giá bán của quán và lựa chọn của người tiêu dùng?
 ## Câu 1. Tiền thực hiện những chức năng nào?
 
 |Chức năng|Biểu hiện trong tình huống|
