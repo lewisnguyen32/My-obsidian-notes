@@ -49,3 +49,4 @@ Về lý luận, trường hợp này cho thấy thị trường **kiểm nghi�
 ### Kiến thức cần nhớ khi ôn bài
 
 **Hàng hóa** có hai thuộc tính: _giá trị sử dụng_ là công dụng đáp ứng nhu cầu; _giá trị_ gắn với lao động xã hội tạo ra hàng hóa. **Giá cả** là sự biểu hiện bằng tiền của giá trị, nhưng giá bán thực tế còn biến động theo cung – cầu, cạnh tranh và điều kiện bán hàng. Với tình huống này, hãy nhớ chuỗi lập luận: **khách có nhu cầu → quán đưa sản phẩm ra thị trường → kết quả bán hàng báo hiệu nên làm gì, làm bao nhiêu và định giá thế nào**.
+
