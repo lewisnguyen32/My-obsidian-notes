@@ -19,7 +19,7 @@
 - Đóng góp dự kiến gồm pipeline, dataset và quy trình tái lập ra sao?
 #### Kết quả cần được:
 - Trình bày được mục tiêu nghiên cứu và những thí nghiệm cần có để trả lời câu hỏi nghiên cứu. 
-- Xác định geometric pipeline đóng vai trò baseline, và model dự đoán servo thay thế hoặc bổ sung bước nào trong pipeline.
+- Làm rõ geometric pipeline có đóng vai trò baseline không, và model dự đoán servo thay thế hoặc bổ sung bước nào.
 ## 3. ***Research Plan.xlsx***
 #### Đọc **Conference 1** -> **Literature Review** rồi xác định được:
 - Paper nào phục vụ perception, retargeting, điều khiển hoặc học bắt chước?
