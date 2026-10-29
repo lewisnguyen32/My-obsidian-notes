@@ -17,17 +17,17 @@ Hiểu vấn đề, đóng góp, ba câu hỏi nghiên cứu và hai công việ
 
 ## Làm gì trong 60 phút
 
-| Phút | Việc làm | Ghi lại |
-| ---: | --- | --- |
-| 5 | Mở [PDF v1](../tmp/2510.02252v1.pdf), kiểm tra nhãn v1 ở trang 1 và PDF có 9 trang. Xem bản đồ đọc trong index. | Phiên bản và câu hỏi trung tâm. |
-| 18 | Đọc kỹ **Abstract và I. Introduction, trang 1–2**; dừng trước Related Work. | Embodiment gap; vấn đề của reference có artifacts; hai đóng góp. |
-| 5 | Lướt **II. Related Work, trang 2–3**. Chỉ xác định bối cảnh copying joint rotations, IK và các retargeter; chưa học Eq. 1 của PHC. | Retargeting có nhiều cách; paper đang so sánh những lựa chọn nào. |
-| 7 | Đọc **Q1–Q3 đầu III. Evaluation Method, trang 3**. | Viết lại mỗi câu hỏi bằng một câu tiếng Việt. |
-| 10 | Xem [Figure 2, trang 4](../tmp/extracted/visuals/page-004.png), đọc mở đầu **IV. General Motion Retargeting**. Nhìn tên năm bước và đầu vào/đầu ra. | Một sơ đồ ghi chú: human motion → GMR → robot reference → RL tracking → đánh giá. Sơ đồ này là diễn giải của mình, không phải toàn bộ Figure 2 gốc. |
-| 3 | Lướt **VI. Conclusion, trang 7–8**. | Một kết luận chính và một giới hạn cần kiểm tra kỹ ở block 3. |
-| 10 | Trả lời ngắn các câu ôn tập dưới đây bằng ghi chú, sau đó mở đáp án để đối chiếu. | Đánh dấu câu chưa giải thích được. |
-| 2 | Chốt đoạn tóm tắt **5–7 câu tiếng Việt**. | Vấn đề → ý tưởng → cách kiểm chứng → giới hạn; không chép Abstract. |
-| **60** | **Tổng** | |
+|   Phút | Việc làm                                                                                                                                            | Ghi lại                                                                                                                                             |
+| -----: | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      5 | Mở [PDF v1](../tmp/2510.02252v1.pdf), kiểm tra nhãn v1 ở trang 1 và PDF có 9 trang. Xem bản đồ đọc trong index.                                     | Phiên bản và câu hỏi trung tâm.                                                                                                                     |
+|     18 | Đọc kỹ **Abstract và I. Introduction, trang 1–2**; dừng trước Related Work.                                                                         | Embodiment gap; vấn đề của reference có artifacts; hai đóng góp.                                                                                    |
+|      5 | Lướt **II. Related Work, trang 2–3**. Chỉ xác định bối cảnh copying joint rotations, IK và các retargeter; chưa học Eq. 1 của PHC.                  | Retargeting có nhiều cách; paper đang so sánh những lựa chọn nào.                                                                                   |
+|      7 | Đọc **Q1–Q3 đầu III. Evaluation Method, trang 3**.                                                                                                  | Viết lại mỗi câu hỏi bằng một câu tiếng Việt.                                                                                                       |
+|     10 | Xem [Figure 2, trang 4](../tmp/extracted/visuals/page-004.png), đọc mở đầu **IV. General Motion Retargeting**. Nhìn tên năm bước và đầu vào/đầu ra. | Một sơ đồ ghi chú: human motion → GMR → robot reference → RL tracking → đánh giá. Sơ đồ này là diễn giải của mình, không phải toàn bộ Figure 2 gốc. |
+|      3 | Lướt **VI. Conclusion, trang 7–8**.                                                                                                                 | Một kết luận chính và một giới hạn cần kiểm tra kỹ ở block 3.                                                                                       |
+|     10 | Trả lời ngắn các câu ôn tập dưới đây bằng ghi chú, sau đó mở đáp án để đối chiếu.                                                                   | Đánh dấu câu chưa giải thích được.                                                                                                                  |
+|      2 | Chốt đoạn tóm tắt **5–7 câu tiếng Việt**.                                                                                                           | Vấn đề → ý tưởng → cách kiểm chứng → giới hạn; không chép Abstract.                                                                                 |
+| **60** | **Tổng**                                                                                                                                            |                                                                                                                                                     |
 
 ## Đầu ra và điểm dừng
 
