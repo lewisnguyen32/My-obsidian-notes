@@ -27,18 +27,18 @@ tags:
 
 ## Làm lần lượt trong 120 phút
 
-| Việc | Phút | Làm gì cụ thể | Ghi lại được gì |
-| --- | ---: | --- | --- |
-| Chuẩn bị khái niệm | 5 | Mở Figure 2 và trang 5. Phân biệt **vị trí**, **hướng**, **root**, **key body**, **FK/IK** bằng bảng thuật ngữ bên dưới. | Một tư thế minh họa: người đứng yên và giơ một tay. Ghi rõ đây là ví dụ học, không phải kết quả paper. |
-| Matching và alignment | 15 | Đọc **Step 1** ở trang 4-5 và **Step 2** ở trang 5. Xác định ai thiết lập mapping, vì sao cần offset hướng và khi nào có offset vị trí. | Hai dòng: “matching ghép phần nào” và “alignment chỉnh cái gì”. |
-| Local/root scaling | 20 | Đọc **Step 3, Eq. 2-3**, trang 5. Dùng ngón tay tách phần vị trí body tương đối với root và phần root trong không gian. Đối chiếu ký hiệu trực tiếp với ảnh. | Bảng ký hiệu; một câu phân biệt local scaling với root translation scaling. |
-| Nghỉ | 5 | Rời màn hình, nghỉ mắt. | Không thêm đầu việc. |
-| Hai giai đoạn IK | 30 | Đọc **Step 4-5, Eq. 4-6**, trang 5. So sánh tập body có mục tiêu hướng, tập body có mục tiêu vị trí, trọng số, khởi tạo và giới hạn. Eq. 5 ưu tiên vai trò giải vận tốc để cập nhật cấu hình. | Bảng so sánh hai giai đoạn bên dưới bằng lời của mình. |
-| Motion sequence | 10 | Đọc **Application to Motion Sequences**, trang 5. Tách warm start từng frame khỏi sửa độ cao sau cả sequence. | Ba mũi tên: frame trước → khởi tạo frame sau → hậu xử lý toàn chuỗi. |
-| Nghỉ | 5 | Nghỉ ngắn trước phần tự kiểm tra. | Không thêm đầu việc. |
-| Ôn tập cuối block | 20 | Che phần đáp án. Dành **12 phút** trả lời mười câu; dành **8 phút** mở đáp án và đối chiếu đúng đoạn nguồn. Câu chưa đủ ý đánh dấu để block ôn tập xử lý. | Danh sách câu đã hiểu/chưa hiểu; không đánh dấu hoàn thành chỉ vì đã đọc đáp án. |
-| Chốt kiến thức | 10 | Viết bảng năm bước với cột **input → xử lý → output → vì sao cần**. Dùng tư thế giơ tay để kiểm tra tính liên tục của luồng. Ghi tối đa ba chỗ vướng cụ thể. | Một bảng phương pháp và nhật ký chỗ vướng; chưa làm slide. |
-| **Tổng** | **120** | Đã gồm **10 phút nghỉ**, câu hỏi và kiểm tra đáp án. | |
+| Việc                  |    Phút | Làm gì cụ thể                                                                                                                                                                                 | Ghi lại được gì                                                                                        |
+| --------------------- | ------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Chuẩn bị khái niệm    |       5 | Mở Figure 2 và trang 5. Phân biệt **vị trí**, **hướng**, **root**, **key body**, **FK/IK** bằng bảng thuật ngữ bên dưới.                                                                      | Một tư thế minh họa: người đứng yên và giơ một tay. Ghi rõ đây là ví dụ học, không phải kết quả paper. |
+| Matching và alignment |      15 | Đọc **Step 1** ở trang 4-5 và **Step 2** ở trang 5. Xác định ai thiết lập mapping, vì sao cần offset hướng và khi nào có offset vị trí.                                                       | Hai dòng: “matching ghép phần nào” và “alignment chỉnh cái gì”.                                        |
+| Local/root scaling    |      20 | Đọc **Step 3, Eq. 2-3**, trang 5. Dùng ngón tay tách phần vị trí body tương đối với root và phần root trong không gian. Đối chiếu ký hiệu trực tiếp với ảnh.                                  | Bảng ký hiệu; một câu phân biệt local scaling với root translation scaling.                            |
+| Nghỉ                  |       5 | Rời màn hình, nghỉ mắt.                                                                                                                                                                       | Không thêm đầu việc.                                                                                   |
+| Hai giai đoạn IK      |      30 | Đọc **Step 4-5, Eq. 4-6**, trang 5. So sánh tập body có mục tiêu hướng, tập body có mục tiêu vị trí, trọng số, khởi tạo và giới hạn. Eq. 5 ưu tiên vai trò giải vận tốc để cập nhật cấu hình. | Bảng so sánh hai giai đoạn bên dưới bằng lời của mình.                                                 |
+| Motion sequence       |      10 | Đọc **Application to Motion Sequences**, trang 5. Tách warm start từng frame khỏi sửa độ cao sau cả sequence.                                                                                 | Ba mũi tên: frame trước → khởi tạo frame sau → hậu xử lý toàn chuỗi.                                   |
+| Nghỉ                  |       5 | Nghỉ ngắn trước phần tự kiểm tra.                                                                                                                                                             | Không thêm đầu việc.                                                                                   |
+| Ôn tập cuối block     |      20 | Che phần đáp án. Dành **12 phút** trả lời mười câu; dành **8 phút** mở đáp án và đối chiếu đúng đoạn nguồn. Câu chưa đủ ý đánh dấu để block ôn tập xử lý.                                     | Danh sách câu đã hiểu/chưa hiểu; không đánh dấu hoàn thành chỉ vì đã đọc đáp án.                       |
+| Chốt kiến thức        |      10 | Viết bảng năm bước với cột **input → xử lý → output → vì sao cần**. Dùng tư thế giơ tay để kiểm tra tính liên tục của luồng. Ghi tối đa ba chỗ vướng cụ thể.                                  | Một bảng phương pháp và nhật ký chỗ vướng; chưa làm slide.                                             |
+| **Tổng**              | **120** | Đã gồm **10 phút nghỉ**, câu hỏi và kiểm tra đáp án.                                                                                                                                          |                                                                                                        |
 
 ## Bảng thuật ngữ để dùng khi đọc
 
