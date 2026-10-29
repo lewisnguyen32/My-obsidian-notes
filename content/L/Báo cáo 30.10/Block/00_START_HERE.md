@@ -11,16 +11,16 @@ status: todo
 
 Bộ note bám **bảy block trong ảnh Calendar của bạn**, tổng **600 phút**: đọc **240 phút** → làm slide **180 phút** → ôn tập **180 phút**. Chỉ ghi thời lượng bằng phút, không ấn định giờ bắt đầu. Đây là kế hoạch học, không xác nhận bạn đã đọc xong hoặc deck đã hoàn thành.
 
-| Thứ tự | Note | Loại việc | Phút |
-| --- | --- | --- | ---: |
-| 1 | [[01_READ_OVERVIEW]] | Đọc tổng quan | 60 |
-| 2 | [[02_READ_METHOD]] | Đọc phương pháp | 120 |
-| 3 | [[03_READ_EVIDENCE]] | Đọc thí nghiệm, kết quả và giới hạn | 60 |
-| 4 | [[04_BUILD_SLIDES]] | Dựng deck | 120 |
-| 5 | [[05_FINALIZE_SLIDES]] | Hoàn thiện và xuất file | 60 |
-| 6 | [[06_REHEARSE]] | Luyện trình bày | 90 |
-| 7 | [[07_QA_REVIEW]] | Ôn hỏi đáp và phần còn yếu | 90 |
-| **Tổng** | | | **600** |
+| Thứ tự   | Note                   | Loại việc                           |    Phút |
+| -------- | ---------------------- | ----------------------------------- | ------: |
+| 1        | [[01_READ_OVERVIEW]]   | Đọc tổng quan                       |      60 |
+| 2        | [[02_READ_METHOD]]     | Đọc phương pháp                     |     120 |
+| 3        | [[03_READ_EVIDENCE]]   | Đọc thí nghiệm, kết quả và giới hạn |      60 |
+| 4        | [[04_BUILD_SLIDES]]    | Dựng deck                           |     120 |
+| 5        | [[05_FINALIZE_SLIDES]] | Hoàn thiện và xuất file             |      60 |
+| 6        | [[06_REHEARSE]]        | Luyện trình bày                     |      90 |
+| 7        | [[07_QA_REVIEW]]       | Ôn hỏi đáp và phần còn yếu          |      90 |
+| **Tổng** |                        |                                     | **600** |
 
 Trong mỗi block, tổng các hàng phân bổ bằng đúng thời lượng block. Câu hỏi tự kiểm tra, đối chiếu đáp án và nghỉ ngắn đều nằm trong ngân sách đó. Tự trả lời trước khi xem đáp án. Tự kiểm tra ở block đọc là kiểm tra hiểu bài bằng ghi chú; việc dựng deck và luyện một bài nói hoàn chỉnh nằm ở block sau.
 
