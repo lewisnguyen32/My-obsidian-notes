@@ -42,38 +42,49 @@ Nguồn chính: [T1 — Chương1](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 
 ## Chương 2 — Tầng ứng dụng
 
-Nguồn chính: [T2 — Chương2](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/Lý thuyết/[BHT CNPM] NMMMT_Chương 2 _Tầng ứng dụng.pdf>), nhóm trang PDF3–34,41–47,51,53–77,90–99. Bảng cổng giữ theo phần đối chiếu đã kiểm trong kế hoạch ôn, không khẳng định T2 liệt kê đủ mọi cổng.
+Nguồn chính: [T2 — Chương2](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/Lý thuyết/[BHT CNPM] NMMMT_Chương 2 _Tầng ứng dụng.pdf>), nhóm trang PDF3–34,41–47,51,53–77,90–99. Sau đề mẫu cô cung cấp ngày30/10, các mục đánh dấu bổ sung và bảng cổng được đối chiếu thêm RFC/IANA ở cuối bản; đây là nguồn làm rõ, không thay T2 làm nguồn chính.
 
-- **Client–server:** Server cung cấp dịch vụ và chờ liên lạc; client khởi tạo yêu cầu. Trong mô hình đang học, server thường hoạt động liên tục còn client có thể kết nối không liên tục.
+- **Client–server:** Trong mô hình slide, server cung cấp dịch vụ, hoạt động liên tục và có IP cố định; client khởi tạo yêu cầu, có thể đổi IP/kết nối không liên tục. Trong kiến trúc client–server thuần túy, client không trực tiếp cung cấp dịch vụ cho nhau như P2P.
 - **P2P:** Peer vừa có thể yêu cầu vừa cung cấp dịch vụ cho peer khác. Thêm peer vừa tăng nhu cầu, vừa có thể tăng tài nguyên phục vụ.
 - **Process và socket:** Process là chương trình đang chạy; socket là cửa giao tiếp giữa process và tầng vận chuyển. Trong mô hình ứng dụng, IP xác định host và port giúp xác định đầu nhận ứng dụng trên host đó.
 - **Nhu cầu ứng dụng:** Ứng dụng có thể cần độ tin cậy, thông lượng, độ trễ hoặc bảo mật; TCP tin cậy không đồng nghĩa bảo đảm độ trễ/thông lượng tối thiểu. TCP/UDP không tự mã hóa; HTTPS trong mô hình đã học bổ sung TLS.
-- **Web, object và URL:** Trang web thường gồm HTML cơ sở cùng các object được tham chiếu như ảnh hoặc âm thanh. URL chỉ tài nguyên cần lấy, gồm thông tin host và đường dẫn.
+- **Web, object và URL:** Trang web thường gồm HTML cơ sở cùng các object được tham chiếu như ảnh hoặc âm thanh. URL web cơ bản có scheme, host và path; một HTML tham chiếu 5 ảnh là 6 object cần lấy.
 - **HTTP request:** Có dòng yêu cầu chứa method, request-target, phiên bản; tiếp theo là header, dòng trống và body nếu có. Host chỉ máy chủ được yêu cầu; User-Agent mô tả phần mềm client.
+- **Ghép URL từ request:** Trong mô hình HTTP trực tiếp, ghép scheme với Host và đúng request-target, giữ đủ các thư mục trong đường dẫn. Với GET /docs/index.html và Host: www-net.cs.umass.edu, giả sử HTTP thường thì URL là http://www-net.cs.umass.edu/docs/index.html; chỉ hostname chưa xác định đủ tài nguyên.
 - **HTTP response:** Có dòng trạng thái chứa phiên bản, mã trạng thái và mô tả; tiếp theo là header và body nếu có. Content-Length là độ dài body, không phải toàn bộ response; Date khác Last-Modified.
 - **GET/POST/HEAD/PUT:** GET lấy tài nguyên và có thể mang tham số trong URL; POST thường gửi dữ liệu trong body. HEAD lấy các header tương ứng GET mà không lấy body; PUT tạo/thay thế tài nguyên tại URL.
 - **Mã HTTP:** 200 thành công, 301 chuyển vĩnh viễn với vị trí mới trong Location, 304 bản cache chưa thay đổi. 400 yêu cầu không hợp lệ, 404 không tìm thấy tài nguyên trên server, 505 phiên bản HTTP không được hỗ trợ.
+- **502 Bad Gateway — bổ sung từ đề mẫu:** Gateway/proxy nhận phản hồi không hợp lệ từ server phía sau khi xử lý yêu cầu. Đây là lỗi lấy nội dung yêu cầu, không phải một lần nhận trang thành công theo mô hình đề.
 - **HTTP stateless:** HTTP không tự ghi nhớ lịch sử các request để duy trì trạng thái ứng dụng. Ứng dụng vẫn có thể xây dựng phiên người dùng bằng cookie và dữ liệu phía server.
 - **Cookie:** Server gửi Set-Cookie trong response; trình duyệt gửi Cookie trong request tiếp theo. Cookie hỗ trợ nhận diện/trạng thái phiên, khác cache lưu bản sao nội dung.
 - **Web cache/proxy:** Lưu bản sao object để giảm độ trễ và lưu lượng phải đi đến server gốc. Cache không tự tăng dung lượng vật lý của đường truyền.
-- **Conditional GET:** Client có thể gửi If-Modified-Since để kiểm tra bản đã cache. Server trả 304 không kèm body object mới nếu chưa thay đổi, hoặc 200 cùng nội dung khi cần gửi bản mới.
+- **Conditional GET/304:** Client có thể gửi If-Modified-Since để kiểm tra bản đã cache; server trả 304 nếu chưa thay đổi hoặc 200 cùng nội dung mới khi cần. 304 không gửi lại body object nhưng trình duyệt dùng bản cache để hiển thị, nên chuỗi 200/304/404/502 trong đề mẫu có 2 lượt xem nội dung thành công, không chỉ đếm mã 2xx.
 - **Nonpersistent và persistent:** Nonpersistent dùng tối đa một object trên một kết nối TCP; persistent tái sử dụng kết nối cho nhiều object cùng server. Persistent không tự đồng nghĩa với pipelining.
+- **Phiên bản HTTP và mặc định kết nối:** HTTP/1.1 mặc định dùng persistent khi không có chỉ định đóng như Connection: close; HTTP/1.0 mặc định không persistent nhưng có thể có cơ chế keep-alive. Đây là mặc định theo phiên bản, không phải khẳng định mọi kết nối thực tế đều được tái sử dụng.
 - **Pipelining:** Cho phép gửi nhiều request trước khi chờ lần lượt từng response. Khi tính nhiều object, phải phân biệt tuần tự, pipelining và nhiều kết nối song song.
 - **HTTP và RTT:** Với một object qua TCP mới, không TLS, bỏ xử lý và thời gian truyền request/header, thời gian là 2RTT+t_object: một RTT mở TCP, một RTT request/byte phản hồi đầu tiên. Nhiều object phải vẽ timeline theo giả thiết, không áp một công thức chung.
+- **Persistent without pipelining, nhiều object:** Với một TCP mới, cùng server, tải tuần tự, không TLS/DNS/xử lý và bỏ truyền request/header, một HTML tham chiếu m object có T=(m+2)RTT+Σt_i, trong đó tổng cộng m+1 object. Ví dụ 1 HTML + 5 ảnh, mỗi object truyền 0,5RTT: T=1RTT mở TCP+6RTT request+6×0,5RTT truyền=10RTT.
 - **Thành phần mail:** User agent giúp soạn/đọc thư; mail server lưu và chuyển thư. Mailbox chứa thư của người nhận, message queue chứa thư chờ gửi.
 - **SMTP:** Theo mô hình slide, thư đi UA gửi→server gửi→server nhận bằng SMTP. Người nhận offline vẫn có thể có thư trong mailbox tại server; SMTP dùng gửi/chuyển thư, không lấy thư về đọc.
-- **POP3/IMAP/webmail:** POP3 dùng truy xuất/tải thư; IMAP làm việc với thư và thư mục lưu trên server. Webmail dùng HTTP ở chặng trình duyệt–dịch vụ webmail; các mail server vẫn có chặng chuyển thư riêng.
+- **POP3/webmail:** POP3 dùng truy xuất/tải thư, cổng cơ sở TCP/110. Webmail dùng HTTP ở chặng trình duyệt–dịch vụ webmail; các mail server vẫn có chặng chuyển thư riêng.
+- **IMAP — bổ sung tên chuẩn/cổng:** IMAP là Internet Message Access Protocol, truy xuất/quản lý thư và thư mục trên server, không thay SMTP để gửi thư đến người nhận. Cặp cần nhớ là TCP/143; “Internet Mail Access Protocol” ở T2 tr60 và phương án D câu12 đề mẫu là tên ghi chưa đúng chuẩn.
 - **Thông điệp mail:** Gồm header như To/From/Subject, dòng trống và body. Header của thư khác với các lệnh SMTP MAIL FROM và RCPT TO.
+- **FTP — bổ sung làm rõ:** FTP (File Transfer Protocol) truyền tệp trên TCP, dùng TCP/21 cho kết nối điều khiển và một kết nối dữ liệu riêng. Cổng 20 là cổng dữ liệu phía server trong FTP active cơ bản; passive dùng cổng được thông báo/thương lượng, không học rằng mọi dữ liệu FTP luôn đi cổng 20.
 
-**Cổng cần nhận diện trong mô hình môn học:**
+**Giao thức — vận chuyển — cổng cần nhận diện:** Đây là cổng dịch vụ mặc định phía server, khác cổng nguồn tạm thời của client; ứng dụng có thể được cấu hình dùng cổng khác.
 
-| Giao thức | Vận chuyển/cổng | Vai trò |
-|---|---|---|
-| HTTP | TCP/80 | Web |
-| SMTP | TCP/25 | Gửi/chuyển thư |
-| POP3 | TCP/110 | Truy xuất thư |
-| FTP | TCP/21 | Kết nối điều khiển truyền tệp |
-| DNS | Cổng53; bài cơ sở dùng UDP | Phân giải tên; không suy rằng DNS chỉ dùng được UDP |
+| Giao thức | Vận chuyển trong mô hình đang học | Cổng mặc định | Vai trò/lưu ý |
+|---|---|---:|---|
+| HTTP | TCP | 80 | Web HTTP cơ sở |
+| HTTPS | TCP + TLS | 443 | Web có TLS trong mô hình TCP đang học |
+| DNS | UDP hoặc TCP | 53 | Bài truy vấn cơ sở thường dùng UDP; DNS cũng hỗ trợ TCP |
+| SMTP | TCP | 25 | Chuyển thư giữa mail server trong mô hình môn học |
+| POP3 | TCP | 110 | Truy xuất/tải thư |
+| IMAP | TCP | 143 | Truy xuất/quản lý thư trên server |
+| FTP — điều khiển | TCP | 21 | Gửi lệnh/điều khiển truyền tệp |
+| FTP — dữ liệu active | TCP | 20 | Cổng dữ liệu phía server ở chế độ active cơ bản; không áp cố định cho passive |
+
+Các cặp HTTPS/443, IMAP/143 và phân biệt FTP control/data được bổ sung để làm rõ bảng; nguồn RFC/IANA ở cuối bản. Không mở rộng sang QUIC/HTTP3 hay thêm cơ chế TCP điều khiển tắc nghẽn.
 
 - **DNS:** Hệ thống cơ sở dữ liệu phân tán, phân cấp và giao thức ứng dụng để phân giải tên. Ngoài tên host–IP, nó còn hỗ trợ bí danh và xác định mail server.
 - **Phân cấp DNS:** Root hướng đến TLD; TLD hướng đến authoritative server có dữ liệu có thẩm quyền cho vùng tên liên quan. Host thường hỏi local resolver trước; local có thể trả từ cache nên không phải mọi truy vấn đều đi qua root.
@@ -101,7 +112,7 @@ Nguồn chính: [T3 — Chương3](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 - **UDP demultiplexing:** Trong mô hình socket UDP chưa connect của slide, nhiều nguồn có thể gửi vào cùng socket bind tại IP/cổng đích. Không tự tạo socket mới chỉ vì thêm một client gửi tới.
 - **TCP demultiplexing:** Một kết nối được phân biệt bằng bộ bốn IP nguồn, port nguồn, IP đích, port đích. Nhiều kết nối server có thể cùng dùng một port dịch vụ.
 - **UDP:** Không bắt tay thiết lập kết nối, không tự ACK/phát lại và có thể mất/sai thứ tự; ứng dụng có thể bổ sung cơ chế cần thiết. Ít overhead không bảo đảm luôn nhanh hơn hoặc bảo đảm độ trễ.
-- **UDP header/Length:** Có bốn trường source port, destination port, Length, checksum, mỗi trường 16 bit, tổng 8 byte. Length=8+payload; trường Length dài 2 byte khác với giá trị độ dài nó chứa.
+- **UDP header/Length:** Có bốn trường source port, destination port, Length, checksum, mỗi trường 16 bit và tổng header 8 byte. Length=8+payload nên giá trị tối thiểu 8 byte và payload=Length−8; bản thân trường Length chỉ dài 16 bit=2 byte, không phải 16 byte và không chỉ đo payload.
 - **Checksum:** Trong bài tính, chia thành các từ 16 bit, cộng có carry vòng về rồi đảo bit để tạo checksum; bên nhận cộng cả checksum, tổng toàn bit 1 là không phát hiện lỗi. Checksum không sửa lỗi, và không phát hiện lỗi chưa chứng minh dữ liệu chắc chắn nguyên vẹn.
 - **FSM:** Đọc theo trạng thái hiện tại→sự kiện/điều kiện→hành động/trạng thái mới. Receiver đổi trạng thái theo packet mình nhận/xử lý, không biết hay chờ ACK của mình tới sender.
 
@@ -139,6 +150,20 @@ Nguồn chính: [T3 — Chương3](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 
 - **Hiệu suất stop-and-wait:** U=(L/R)/(RTT+L/R), bỏ thời gian truyền ACK, xử lý và mất gói; RTT trong mô hình không gồm thời gian phát data L/R. Các đại lượng thời gian phải cùng đơn vị.
 - **Giới hạn cửa sổ GBN/SR:** Với k bit số thứ tự, GBN chuẩn có cửa sổ nhận1 dùng W≤2^k−1; SR chuẩn có cửa sổ gửi/nhận bằng W dùng W≤2^(k−1). Công thức giới hạn này là phần bổ sung đã đối chiếu trước, không in trực tiếp ở T3tr67–73: [nguồn lý thuyết đã kiểm](https://sites.uclouvain.be/CNP3/1st/html/transport/transport.html).
+
+## Bổ sung sau đề mẫu cô cung cấp ngày30/10/2026
+
+Đối chiếu15câu cho thấy cần ghi rõ hơn RTT nhiều object, HTTP/1.1 mặc định persistent, URL từ Host+path,304 vẫn xem cache,UDP Length tối thiểu8B; bổ sung IMAP/TCP143,tên Message,FTP control/data và502. Các mục đã có như HTTP/TCP80,FTP/TCP21,DNS53 không bị tính nhầm là hoàn toàn chưa học.
+
+Nguồn sau đây chỉ bổ sung/làm rõ cho T1/T2/T3; không phải nguồn đề online và không thay đổi thống kê5PDF/172lượt câu:
+
+- [RFC9112 §9.3](https://www.rfc-editor.org/rfc/rfc9112.html#section-9.3): mặc định kết nối HTTP/1.1; [§3.3](https://www.rfc-editor.org/rfc/rfc9112.html#section-3.3): dựng URI từ request.
+- [RFC9110 §15.4.5](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.4.5):304; [§15.6.3](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.6.3):502; [§4.2.2](https://www.rfc-editor.org/rfc/rfc9110.html#section-4.2.2):HTTPS/443.
+- [RFC9051 §2.1](https://www.rfc-editor.org/rfc/rfc9051.html#section-2.1):IMAP/TCP143; phần mở đầu xác nhận tên Internet Message Access Protocol và chức năng truy xuất/quản lý thư.
+- [RFC959](https://www.rfc-editor.org/rfc/rfc959.html):FTP/control/data; [IANA — FTP](https://www.iana.org/assignments/service-names-port-numbers?search=ftp):cổng20/21; [IANA — IMAP](https://www.iana.org/assignments/service-names-port-numbers?search=imap):cổng143.
+- [RFC1035 §4.2](https://www.rfc-editor.org/rfc/rfc1035.html#section-4.2):DNS dùngUDP/TCP53.
+
+Câu15 của đề mẫu hỏi Slow Start, thuộcT3tr98/điều khiển tắc nghẽn đã loại khỏi phạm vi hiện hành; chỉ được chữa trong báo cáo riêng, không tự đưa thành phần học bắt buộc trong bản này.
 
 ## Lưu ý nguồn
 
