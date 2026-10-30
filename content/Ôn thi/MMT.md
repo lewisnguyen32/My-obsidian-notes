@@ -13,7 +13,7 @@ Nguồn chính: [T1 — Chương1](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 - **Môi trường truyền:** Cáp đồng/cáp quang là môi trường hữu tuyến; vô tuyến truyền tín hiệu qua không gian. Tốc độ truyền dữ liệu và tốc độ lan truyền tín hiệu là hai đại lượng khác nhau.
 - **Mạng lõi/chuyển mạch gói:** Mạng lõi gồm các router liên kết với nhau; dữ liệu được chia thành gói, các luồng chia sẻ tài nguyên liên kết theo nhu cầu. Gói có thể phải chờ ở hàng đợi khi đầu ra bận.
 - **Chuyển mạch kênh:** Tài nguyên được dành riêng cho kết nối; phần đã cấp có thể bị bỏ trống lúc không truyền. Không có kết luận chung rằng chuyển mạch kênh hoặc gói luôn nhanh hơn.
-- **FDM và TDM:** FDM chia theo dải tần; TDM chia theo khe thời gian. Trong mô hình chuyển mạch kênh, mỗi kết nối dùng phần được cấp cho mình.
+- **FDM và TDM:** FDM (Frequency Division Multiplexing) chia theo dải tần; TDM (Time Division Multiplexing) chia theo khe thời gian. Trong mô hình chuyển mạch kênh, mỗi kết nối dùng phần được cấp cho mình.
 - **Forwarding và routing:** Forwarding đưa gói từ đầu vào sang đầu ra phù hợp tại một router. Routing xác định đường đi nguồn–đích và làm cơ sở cho các bảng chuyển tiếp.
 - **Store-and-forward:** Router phải nhận đủ một gói rồi mới phát gói đó lên liên kết kế tiếp. Một gói qua nhiều liên kết vì thế phải chịu thời gian truyền ở từng liên kết.
 - **Đổi đơn vị:** 1 byte=8 bit, 1 Mbps=10^6 bit/s, 1 km=1000 m, 1 s=1000 ms; bps khác B/s. Tốc độ truyền R tính bằng bit/s, tốc độ lan truyền s tính bằng m/s.
@@ -111,10 +111,10 @@ Nguồn chính: [T3 — Chương3](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 - **Multiplexing/demultiplexing:** Bên gửi nhận dữ liệu từ các socket và thêm header; bên nhận dùng thông tin để giao đúng socket. Port nằm trong header TCP/UDP, địa chỉ IP nằm trong header IP.
 - **UDP demultiplexing:** Trong mô hình socket UDP chưa connect của slide, nhiều nguồn có thể gửi vào cùng socket bind tại IP/cổng đích. Không tự tạo socket mới chỉ vì thêm một client gửi tới.
 - **TCP demultiplexing:** Một kết nối được phân biệt bằng bộ bốn IP nguồn, port nguồn, IP đích, port đích. Nhiều kết nối server có thể cùng dùng một port dịch vụ.
-- **UDP:** Không bắt tay thiết lập kết nối, không tự ACK/phát lại và có thể mất/sai thứ tự; ứng dụng có thể bổ sung cơ chế cần thiết. Ít overhead không bảo đảm luôn nhanh hơn hoặc bảo đảm độ trễ.
+- **UDP (User Datagram Protocol):** Không bắt tay thiết lập kết nối, không tự ACK/phát lại và có thể mất/sai thứ tự; ứng dụng có thể bổ sung cơ chế cần thiết. Ít overhead không bảo đảm luôn nhanh hơn hoặc bảo đảm độ trễ.
 - **UDP header/Length:** Có bốn trường source port, destination port, Length, checksum, mỗi trường 16 bit và tổng header 8 byte. Length=8+payload nên giá trị tối thiểu 8 byte và payload=Length−8; bản thân trường Length chỉ dài 16 bit=2 byte, không phải 16 byte và không chỉ đo payload.
 - **Checksum:** Trong bài tính, chia thành các từ 16 bit, cộng có carry vòng về rồi đảo bit để tạo checksum; bên nhận cộng cả checksum, tổng toàn bit 1 là không phát hiện lỗi. Checksum không sửa lỗi, và không phát hiện lỗi chưa chứng minh dữ liệu chắc chắn nguyên vẹn.
-- **FSM:** Đọc theo trạng thái hiện tại→sự kiện/điều kiện→hành động/trạng thái mới. Receiver đổi trạng thái theo packet mình nhận/xử lý, không biết hay chờ ACK của mình tới sender.
+- **FSM (Finite State Machine — máy trạng thái hữu hạn):** Đọc theo trạng thái hiện tại→sự kiện/điều kiện→hành động/trạng thái mới. Receiver đổi trạng thái theo packet mình nhận/xử lý, không biết hay chờ ACK của mình tới sender.
 
 **Các phiên bản RDT:**
 
@@ -130,7 +130,7 @@ Nguồn chính: [T3 — Chương3](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 - **Pipelining/cửa sổ:** Cho phép nhiều packet đã gửi nhưng còn chờ ACK để tận dụng liên kết. Cửa sổ là dải số thứ tự được phép dùng; base tiến theo ý nghĩa ACK của từng giao thức.
 - **Go-Back-N:** ACK(n) xác nhận tích lũy packet đến n; mô hình học ở T3tr69 hủy packet đến sai thứ tự và ACK lại packet cuối đã nhận liên tục. Sender dùng timer cho packet cũ nhất chưaACK; timeout phát lại các packet đã gửi còn chưaACK từ base trở đi.
 - **Selective Repeat:** Receiver buffer packet hợp lệ trong cửa sổ và ACK riêng từng packet, nhưng chỉ giao dữ liệu liên tục lên ứng dụng. Sender ghi từng ACK, dùng timer logic riêng và chỉ phát lại packet bị timeout; base vẫn chờ ACK của packet đầu cửa sổ.
-- **Dịch vụ TCP:** Cung cấp luồng byte tin cậy, đúng thứ tự, hai chiều trong một kết nối. TCP segment gồm header và payload; các trường cần nhận diện là port, Seq, ACK, receive window và các cờ.
+- **Dịch vụ TCP (Transmission Control Protocol):** Cung cấp luồng byte tin cậy, đúng thứ tự, hai chiều trong một kết nối. TCP segment gồm header và payload; các trường cần nhận diện là port, Seq, ACK, receive window và các cờ.
 - **MSS:** Là payload tối đa, không gồm TCP header. MSS 1000B với header 20B cho phép payload 1000B, tổng segment 1020B; không phải payload 1020B.
 - **Seq theo byte:** Seq=s, payload L byte thì dữ liệu mang số s…s+L−1; dữ liệu mới nối tiếp bắt đầu ở s+L. Header không tính vào dãy byte này; bản phát lại giữ Seq của dữ liệu cũ.
 - **Hai chiều Seq/ACK:** Seq nói về dữ liệu mình gửi; ACK nói về dữ liệu nhận từ bên kia. Nhận dữ liệu không làm Seq gửi chuyển sang dãy số của bên kia; ACK thuần không mang dữ liệu không tiêu thụ thêm Seq.
